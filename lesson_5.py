@@ -10,6 +10,7 @@ def zadacha_34():
 
     print('Zadacha 34:', array, f'(Even numbers: {count})')
 
+
 def zadacha_36():
     from random import randint
 
@@ -21,7 +22,16 @@ def zadacha_36():
         if i % 2 == 0:
             sum += array[i]
 
-    print('Zadacha 34:', array, f'(Sum: {sum})')
+    print('Zadacha 36:', array, f'(Sum: {sum})')
+
+
+def zadacha_38():
+    from random import randint
+
+    array = [randint(1, 99) for i in range(5)]
+    print('Zadacha 38:', array, f'(Difference: {max(array) - min(array)})')
+
 
 zadacha_34()
 zadacha_36()
+zadacha_38()
